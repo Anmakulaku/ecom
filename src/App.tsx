@@ -16,7 +16,7 @@ function App() {
       <div className='App'>
         <Navbar />
         <Routes>
-          <Route path="/ecom/" element={<RedirectToHome />} />
+          <Route path="/e-commerce/" element={<RedirectToHome />} />
           <Route path="/" element={<Home />} />
           <Route path="/store" element={<Store />} />
           <Route path="/product/:id" element={<ProductPage />} />

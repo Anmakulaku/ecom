@@ -11,13 +11,10 @@ export type StoreItemProps = {
 };
 
 export function StoreItem ({ id, name, price, img}: StoreItemProps) {
-
-    const imageUrl = import.meta.env.BASE_URL + img;
-    
     return (
             <Link to={`/product/${id}`} key={id} className="storeItem__container">
                 <div className="storeItem__img">
-                    <img src={imageUrl} alt="product-image" />
+                    <img src={img} alt="product-image" />
                 </div>
                 <div className="storeItem__text">
                     <h1 className="storeItem__title">{name}</h1>
