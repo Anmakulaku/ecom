@@ -4,8 +4,8 @@
         "gender": "female",
         "category": "accessories",
         "subcategory": "bags",
-        "img": "/src/img/images/bag1.jpg",
-        "imgOther": ["/src/img/images/bag1O1.jpg", "/src/img/images/bag1O2.jpg"],
+        "img": "/ecom/src/img/images/bag1.jpg",
+        "imgOther": ["/ecom/src/img/images/bag1O1.jpg", "/ecom/src/img/images/bag1O2.jpg"],
         "name": "Blue-cream bag",
         "price": 29.99
     },
