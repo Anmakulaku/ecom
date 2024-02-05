@@ -8,8 +8,6 @@ import { getAllProducts } from '../services/productService';
 export function ShoppingCart() {
     const { closeCart, cartItems, isGiftWrapSelected, toggleGiftWrap } = useShoppingCart();
     const giftWrapPrice = 10;
-
-    // Użyj funkcji getAllProducts zamiast importowania statycznego pliku
     const allProducts = getAllProducts();
 
     const totalSum = cartItems.reduce((total, cartItem) => {

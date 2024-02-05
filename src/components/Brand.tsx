@@ -1,9 +1,9 @@
 import './Brand.css'
-import chanel from '../assets/img/chanel.png'
-import lv from '../assets/img/lv.png'
-import prada from '../assets/img/prada.png'
-import ck from '../assets/img/ck.png'
-import denim from '../assets/img/denim.png'
+import chanel from '../img/chanel.png'
+import lv from '../img/lv.png'
+import prada from '../img/prada.png'
+import ck from '../img/ck.png'
+import denim from '../img/denim.png'
 
 export function Brand() {
 

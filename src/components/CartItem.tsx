@@ -10,8 +10,6 @@ type CartItemProps ={
 
 export function CartItem ({id, quantity}: CartItemProps) {
     const { removeFromCart, increaseCartQuantity, decreaseCartQuantity }= useShoppingCart()
-    
-    // Użyj funkcji getAllProducts zamiast importowania statycznego pliku
     const allProducts = getAllProducts();
 
     const item = allProducts.find(item => item.id === id);

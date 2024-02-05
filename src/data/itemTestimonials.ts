@@ -1,7 +1,7 @@
-import testimonials1 from '../assets/img/testimonials1.png';
-import testimonials2 from '../assets/img/testimonials2.png';
-import testimonials3 from '../assets/img/testimonials3.png';
-import testimonials4 from '../assets/img/testimonials4.png';
+import testimonials1 from '../img/testimonials1.png';
+import testimonials2 from '../img/testimonials2.png';
+import testimonials3 from '../img/testimonials3.png';
+import testimonials4 from '../img/testimonials4.png';
 
 export const items = [
     {
@@ -31,5 +31,5 @@ export const items = [
         text: "Great customer service, large selection, everyone can find something for themselves. I recommend it to everyone!",
         name: "Helen A.",
         profession: "Pharmacist"
-    },
+    }
 ]

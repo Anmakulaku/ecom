@@ -1,11 +1,11 @@
 import './Gallery.css'
-import gallery1 from "../assets/img/gallery1.png"
-import gallery2 from "../assets/img/gallery2.jpg"
-import gallery3 from "../assets/img/gallery3.png"
-import gallery4 from "../assets/img/gallery4.jpg"
-import gallery5 from "../assets/img/gallery5.png"
-import gallery6 from "../assets/img/gallery6.png"
-import gallery7 from "../assets/img/gallery7.png"
+import gallery1 from "../img/gallery1.png"
+import gallery2 from "../img/gallery2.jpg"
+import gallery3 from "../img/gallery3.png"
+import gallery4 from "../img/gallery4.jpg"
+import gallery5 from "../img/gallery5.png"
+import gallery6 from "../img/gallery6.png"
+import gallery7 from "../img/gallery7.png"
 
 export function Gallery() {
     return(
