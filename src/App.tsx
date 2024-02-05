@@ -9,7 +9,7 @@ import { ShoppingCartProvider } from './context/ShoppingCartContext'
 
 function App() {
 
-  const RedirectToHome = () => <Navigate to="/home" replace />;
+  const RedirectToHome = () => <Navigate to="/" replace />;
 
   return (
     <ShoppingCartProvider>
@@ -17,7 +17,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/ecom/" element={<RedirectToHome />} />
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/store" element={<Store />} />
           <Route path="/product/:id" element={<ProductPage />} />
           <Route path="/cart" element={<Cart />} />
