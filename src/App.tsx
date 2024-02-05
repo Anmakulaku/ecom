@@ -17,7 +17,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/ecom/" element={<RedirectToHome />} />
-          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/store" element={<Store />} />
           <Route path="/product/:id" element={<ProductPage />} />
           <Route path="/cart" element={<Cart />} />
