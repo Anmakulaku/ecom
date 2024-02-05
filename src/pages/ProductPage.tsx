@@ -64,24 +64,27 @@ export function ProductPage() {
         setSelectedSize(size);
     };
 
+    const imageUrl = import.meta.env.BASE_URL + mainImage;
+    const otherImageUrls = product.imgOther?.map((img) => import.meta.env.BASE_URL + img) || [];
+
     return (
         <div className="productPage">
         <div className='productPage__content'>
             <div className='productPage__images'>
             {mainImage && (
-                <img src={mainImage} alt={product.name} className="productPage__imgMain" />
+                <img src={imageUrl} alt={product.name} className="productPage__imgMain" />
             )}
-            <div className='productPage__imgOthers'>
-                {[product.img, ...product.imgOther].map((img, index) => (
-                <img
-                    key={index}
-                    src={img}
-                    alt={index === 0 ? product.name : `${product.name} - Additional Image ${index}`}
-                    onClick={() => handleImageClick(img)}
-                    className={img === mainImage ? 'selected' : ''}
-                />
-                ))}
-                    </div>
+                <div className='productPage__imgOthers'>
+                    {otherImageUrls.map((img, index) => (
+                        <img
+                            key={index}
+                            src={img}
+                            alt={index === 0 ? product.name : `${product.name} - Additional Image ${index}`}
+                            onClick={() => handleImageClick(img)}
+                            className={img === mainImage ? 'selected' : ''}
+                        />
+                    ))}
+                </div>
                 </div>
                 <div className='productPage__info'>
                     <h2 className='productPage__titleStyle productPage__companyName'>FASCO</h2>
